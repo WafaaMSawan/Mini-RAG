@@ -26,3 +26,8 @@ $ conda activate mini-rag
 sudo apt update
 sudo apt install libpq-dev gcc python3-dev
 ```
+### (Optional) Setup you command line interface for better readability
+
+```bash
+export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
+```
