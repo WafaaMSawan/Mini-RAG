@@ -1,8 +1,6 @@
 from fastapi import FastAPI
+from routes import base
+
 app = FastAPI()
 
-@app.get("/welcome") #app.type of reqest(name of request) يعني لو حد كتبه هينفذ ال func
-def welcome():
-    return{
-        "message":"Hello Digilians!"
-    }
+app.include_router(base.base_router)
